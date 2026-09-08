@@ -36,7 +36,7 @@
           <p class="text-sm font-semibold text-brand">Sign in</p>
           <h2 class="mt-3 text-4xl font-semibold tracking-[-0.04em]">Choose your workspace.</h2>
           <p class="mt-3 text-sm leading-6 text-slate-600">
-            Select the role you use on Outsorce. The demo API accepts any email and password.
+            Log in only after your workspace has been created and approved.
           </p>
         </div>
 
@@ -98,7 +98,7 @@
 
         <div class="mt-6 flex items-center justify-between text-sm">
           <NuxtLink to="/forgot-password" class="font-semibold text-slate-600 transition hover:text-brand">Forgot password?</NuxtLink>
-          <NuxtLink to="/" class="font-semibold text-slate-600 transition hover:text-brand">Back to site</NuxtLink>
+          <NuxtLink to="/register" class="font-semibold text-slate-600 transition hover:text-brand">Create access</NuxtLink>
         </div>
       </div>
     </section>
@@ -136,6 +136,13 @@ const login = async () => {
   error.value = ''
   isSubmitting.value = true
   try {
+    if (role.value !== 'ADMIN' && import.meta.client) {
+      const registrations = JSON.parse(localStorage.getItem('outsorce_registrations') || '{}')
+      if (registrations[email.value.toLowerCase()] !== role.value) {
+        error.value = `Create ${currentRoleLabel.value.toLowerCase()} access before logging in.`
+        return
+      }
+    }
     const api = useApi()
     const { data } = await api.post(`/auth/login?role=${role.value}`, { email: email.value, password: password.value })
     auth.setSession(data, role.value)

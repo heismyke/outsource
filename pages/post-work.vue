@@ -103,10 +103,10 @@
                 </p>
               </div>
               <NuxtLink
-                :to="`/employer/tasks?category=${encodeURIComponent(selectedCategory.title)}&mode=${encodeURIComponent(workMode)}&budget=${encodeURIComponent(budget)}`"
+                :to="`/register?role=EMPLOYER&category=${encodeURIComponent(selectedCategory.title)}&mode=${encodeURIComponent(workMode)}&budget=${encodeURIComponent(budget)}`"
                 class="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-white px-6 py-4 font-semibold text-ink transition hover:bg-brand hover:text-white"
               >
-                Continue
+                Create employer access
                 <FontAwesomeIcon icon="arrow-right" />
               </NuxtLink>
             </div>
