@@ -20,11 +20,11 @@
           </p>
           <div class="mt-8 flex flex-col gap-3 sm:flex-row">
             <NuxtLink to="/post-work" class="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-4 text-base font-semibold text-ink transition hover:bg-brand hover:text-white">
-              Start hiring
+              Post work
               <FontAwesomeIcon icon="arrow-right" class="h-4 w-4" />
             </NuxtLink>
             <NuxtLink to="/login" class="inline-flex items-center justify-center rounded-full border border-white/24 bg-white/10 px-6 py-4 text-base font-semibold text-white backdrop-blur transition hover:bg-white hover:text-ink">
-              Enter workspace
+              Log in
             </NuxtLink>
           </div>
         </div>
