@@ -1,39 +1,38 @@
 <template>
   <div class="overflow-x-hidden bg-white">
-    <section class="border-b border-line bg-white">
-      <div class="mx-auto grid min-h-[720px] max-w-7xl items-center gap-12 px-4 py-16 lg:grid-cols-[0.95fr_1.05fr]">
-        <div>
-          <p class="text-sm font-semibold text-brand">Nigeria-first work outsourcing</p>
-          <h1 class="mt-5 max-w-3xl text-5xl font-semibold leading-[1.03] tracking-[-0.045em] text-ink md:text-7xl">
+    <section class="relative min-h-screen overflow-hidden bg-ink text-white">
+      <img
+        src="~/assets/images/pexels-a-darmel-8133991.jpg"
+        alt="Business team agreeing on an outsourced work engagement"
+        class="absolute inset-0 h-full w-full object-cover"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-[#0f1a15]/90 via-[#0f1a15]/58 to-[#0f1a15]/18" />
+      <div class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[#0f1a15]/70 to-transparent" />
+
+      <div class="relative mx-auto flex min-h-screen max-w-7xl flex-col justify-end px-4 pb-12 pt-32 md:pb-16">
+        <div class="max-w-3xl">
+          <p class="text-sm font-semibold text-white/76">Nigeria-first work outsourcing</p>
+          <h1 class="mt-5 text-5xl font-semibold leading-[1.02] tracking-[-0.045em] md:text-7xl">
             Post work. Match talent. Pay safely.
           </h1>
-          <p class="mt-6 max-w-xl text-lg leading-8 text-gray-600">
-            One marketplace for employers, recruiters, workers, and admins to run task-based work with deposits, milestones, and clear payouts.
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-white/78">
+            A marketplace for tasks, contracts, deposits, and worker payouts.
           </p>
           <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-            <NuxtLink to="/register" class="inline-flex items-center justify-center gap-2 rounded-full bg-brand px-6 py-4 text-base font-semibold text-white">
+            <NuxtLink to="/register" class="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-4 text-base font-semibold text-ink transition hover:bg-brand hover:text-white">
               Start hiring
               <FontAwesomeIcon icon="arrow-right" class="h-4 w-4" />
             </NuxtLink>
-            <NuxtLink to="/login" class="inline-flex items-center justify-center rounded-full border border-line bg-white px-6 py-4 text-base font-semibold text-ink">
+            <NuxtLink to="/login" class="inline-flex items-center justify-center rounded-full border border-white/24 bg-white/10 px-6 py-4 text-base font-semibold text-white backdrop-blur transition hover:bg-white hover:text-ink">
               Enter workspace
             </NuxtLink>
           </div>
         </div>
 
-        <div class="relative">
-          <img
-            src="~/assets/images/pexels-a-darmel-8133991.jpg"
-            alt="Business team agreeing on an outsourced work engagement"
-            class="h-[560px] w-full rounded-[36px] object-cover"
-          />
-          <div class="absolute bottom-6 left-6 right-6 rounded-[28px] border border-white/30 bg-white/86 p-5 backdrop-blur">
-            <div class="grid gap-4 sm:grid-cols-3">
-              <div v-for="metric in heroMetrics" :key="metric.label">
-                <p class="text-sm text-gray-500">{{ metric.label }}</p>
-                <p class="mt-1 text-2xl font-semibold tracking-[-0.03em]">{{ metric.value }}</p>
-              </div>
-            </div>
+        <div class="mt-12 grid max-w-3xl gap-3 sm:grid-cols-3">
+          <div v-for="metric in heroMetrics" :key="metric.label" class="rounded-[24px] border border-white/14 bg-white/10 p-5 backdrop-blur-md">
+            <p class="text-sm text-white/58">{{ metric.label }}</p>
+            <p class="mt-1 text-2xl font-semibold tracking-[-0.03em] text-white">{{ metric.value }}</p>
           </div>
         </div>
       </div>
