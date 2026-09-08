@@ -120,6 +120,8 @@
 <script setup lang="ts">
 definePageMeta({ layout: 'public' })
 
+const route = useRoute()
+
 const categories = [
   {
     icon: 'briefcase',
@@ -150,7 +152,8 @@ const categories = [
 const workModes = ['Remote', 'On-site', 'Hybrid']
 const budgetOptions = ['Under NGN 100k', 'NGN 100k - 500k', 'NGN 500k - 2m', 'Above NGN 2m']
 
-const selectedCategory = ref(categories[0])
+const initialCategory = categories.find((category) => category.title === route.query.category) || categories[0]
+const selectedCategory = ref(initialCategory)
 const workMode = ref(workModes[0])
 const budget = ref(budgetOptions[1])
 </script>
