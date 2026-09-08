@@ -121,7 +121,6 @@ const roleOptions: Array<{ value: UserRole; label: string; copy: string; icon: s
   { value: 'EMPLOYER', label: 'Employer', copy: 'Post tasks and fund deposits.', icon: 'building' },
   { value: 'WORKER', label: 'Worker', copy: 'Apply, deliver, and withdraw.', icon: 'users' },
   { value: 'RECRUITER', label: 'Recruiter', copy: 'Submit shortlists and track commission.', icon: 'user-tie' },
-  { value: 'ADMIN', label: 'Admin', copy: 'Review marketplace operations.', icon: 'shield-halved' },
 ]
 
 const trustItems = [
@@ -136,7 +135,7 @@ const login = async () => {
   error.value = ''
   isSubmitting.value = true
   try {
-    if (role.value !== 'ADMIN' && import.meta.client) {
+    if (import.meta.client) {
       const registrations = JSON.parse(localStorage.getItem('outsorce_registrations') || '{}')
       if (registrations[email.value.toLowerCase()] !== role.value) {
         error.value = `Create ${currentRoleLabel.value.toLowerCase()} access before logging in.`
@@ -147,9 +146,7 @@ const login = async () => {
     const { data } = await api.post(`/auth/login?role=${role.value}`, { email: email.value, password: password.value })
     auth.setSession(data, role.value)
     await navigateTo(
-      role.value === 'ADMIN'
-        ? '/admin/dashboard'
-        : role.value === 'EMPLOYER'
+      role.value === 'EMPLOYER'
           ? '/employer/dashboard'
           : role.value === 'RECRUITER'
             ? '/recruiter/dashboard'
