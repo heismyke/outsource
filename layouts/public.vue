@@ -36,7 +36,6 @@
               :aria-expanded="isMegaOpen"
             >
               Hire
-              <span class="text-[10px] leading-none transition group-hover:rotate-180">v</span>
             </button>
 
             <div
