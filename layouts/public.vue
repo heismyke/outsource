@@ -115,17 +115,6 @@
           >
             Log in
           </NuxtLink>
-          <NuxtLink
-            to="/post-work"
-            class="rounded-full px-4 py-2.5 font-semibold transition"
-            :class="
-              isSolid
-                ? 'bg-ink text-white hover:bg-teal-700'
-                : 'bg-white text-ink hover:bg-brand hover:text-white'
-            "
-          >
-            Post a task
-          </NuxtLink>
         </nav>
       </div>
     </header>

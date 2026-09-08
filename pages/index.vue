@@ -18,11 +18,17 @@
           <p class="mt-6 max-w-2xl text-lg leading-8 text-white/78">
             A marketplace for tasks, contracts, deposits, and worker payouts.
           </p>
-          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-            <NuxtLink to="/post-work" class="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-4 text-base font-semibold text-ink transition hover:bg-brand hover:text-white">
+          <div class="mt-8">
+            <NuxtLink
+              to="/post-work"
+              class="inline-flex items-center justify-center gap-3 rounded-full bg-brand px-7 py-4 text-base font-semibold text-white shadow-[0_20px_70px_rgba(15,118,110,0.42)] ring-1 ring-white/18 transition hover:-translate-y-0.5 hover:bg-white hover:text-ink hover:shadow-[0_26px_90px_rgba(255,255,255,0.24)]"
+            >
               Post a task
               <FontAwesomeIcon icon="arrow-right" class="h-4 w-4" />
             </NuxtLink>
+            <p class="mt-4 text-sm font-medium text-white/68">
+              Guided brief, deposit setup, and shortlist review.
+            </p>
           </div>
         </div>
       </div>
