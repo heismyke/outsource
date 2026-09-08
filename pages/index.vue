@@ -20,7 +20,7 @@
           </p>
           <div class="mt-8 flex flex-col gap-3 sm:flex-row">
             <NuxtLink to="/post-work" class="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-4 text-base font-semibold text-ink transition hover:bg-brand hover:text-white">
-              Post work
+              Post a task
               <FontAwesomeIcon icon="arrow-right" class="h-4 w-4" />
             </NuxtLink>
             <NuxtLink to="/login" class="inline-flex items-center justify-center rounded-full border border-white/24 bg-white/10 px-6 py-4 text-base font-semibold text-white backdrop-blur transition hover:bg-white hover:text-ink">
@@ -100,7 +100,7 @@
           <p class="mt-4 text-gray-600">Verification, escrow tracking, dispute handling, ledgers, and audit logs from day one.</p>
         </div>
         <NuxtLink to="/post-work" class="inline-flex items-center justify-center gap-2 rounded-full bg-ink px-6 py-4 font-semibold text-white">
-          Post work
+          Post a task
           <FontAwesomeIcon icon="arrow-right" />
         </NuxtLink>
       </div>
@@ -140,7 +140,7 @@
           <h3 class="text-sm font-semibold text-ink">Access</h3>
           <div class="mt-4 space-y-3 text-sm text-gray-600">
             <NuxtLink class="block hover:text-brand" to="/login">Log in</NuxtLink>
-            <NuxtLink class="block hover:text-brand" to="/post-work">Post work</NuxtLink>
+            <NuxtLink class="block hover:text-brand" to="/post-work">Post a task</NuxtLink>
             <a class="block hover:text-brand" href="mailto:hello@outsorce.com">hello@outsorce.com</a>
           </div>
         </div>

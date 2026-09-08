@@ -48,7 +48,7 @@
                 : 'bg-white text-ink hover:bg-brand hover:text-white'
             "
           >
-            Post work
+            Post a task
           </NuxtLink>
         </nav>
       </div>
