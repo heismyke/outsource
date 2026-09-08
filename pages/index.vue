@@ -23,8 +23,8 @@
 
         <div class="relative">
           <img
-            src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=1100"
-            alt="Team reviewing outsourced work"
+            src="~/assets/images/pexels-a-darmel-8133991.jpg"
+            alt="Business team agreeing on an outsourced work engagement"
             class="h-[560px] w-full rounded-[36px] object-cover"
           />
           <div class="absolute bottom-6 left-6 right-6 rounded-[28px] border border-white/30 bg-white/86 p-5 backdrop-blur">
