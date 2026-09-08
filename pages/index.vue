@@ -109,9 +109,8 @@
     <footer class="border-t border-line bg-white">
       <div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <div>
-          <NuxtLink to="/" class="inline-flex items-center gap-3">
-            <span class="grid h-10 w-10 place-items-center rounded-2xl bg-brand text-base font-bold text-white">O</span>
-            <span class="text-lg font-semibold tracking-[-0.02em] text-ink">Outsorce</span>
+          <NuxtLink to="/" class="inline-flex items-center">
+            <img src="~/assets/images/outsorce-logo.png" alt="Outsorce" class="h-10 w-auto" />
           </NuxtLink>
           <p class="mt-4 max-w-sm text-sm leading-6 text-gray-600">
             Nigeria-first marketplace for task-based work, deposits, contracts, and worker payouts.

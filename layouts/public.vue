@@ -2,9 +2,8 @@
   <div class="min-h-screen overflow-x-hidden bg-white">
     <header class="fixed left-0 right-0 top-0 z-30 border-b border-white/15 bg-[#07110d]/62 shadow-sm backdrop-blur-xl">
       <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4">
-        <NuxtLink to="/" class="flex items-center gap-2 text-xl font-semibold text-white">
-          <span class="grid h-10 w-10 place-items-center rounded-2xl bg-white text-sm font-bold text-brand">O</span>
-          Outsorce
+        <NuxtLink to="/" class="flex items-center">
+          <img src="~/assets/images/outsorce-logo.png" alt="Outsorce" class="h-10 w-auto brightness-0 invert" />
         </NuxtLink>
         <nav class="hidden items-center gap-7 text-sm font-semibold text-white md:flex">
           <a href="#companies" class="transition hover:text-white">For companies</a>

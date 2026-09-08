@@ -12,9 +12,8 @@ const auth = useAuthStore()
 <template>
   <div class="min-h-screen bg-white text-ink">
     <aside class="fixed inset-y-0 left-0 z-20 hidden w-72 border-r border-line bg-white p-6 lg:block">
-      <NuxtLink to="/" class="flex items-center gap-3 text-xl font-semibold">
-        <span class="grid h-10 w-10 place-items-center rounded-2xl bg-brand text-sm font-bold text-white">O</span>
-        Outsorce
+      <NuxtLink to="/" class="flex items-center">
+        <img src="~/assets/images/outsorce-logo.png" alt="Outsorce" class="h-10 w-auto" />
       </NuxtLink>
 
       <nav class="mt-10 space-y-1">
