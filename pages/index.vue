@@ -11,7 +11,7 @@
 
       <div class="relative mx-auto flex min-h-screen max-w-7xl flex-col justify-end px-4 pb-12 pt-32 md:pb-16">
         <div class="max-w-3xl">
-          <p class="text-sm font-semibold text-white/76">Nigeria-first work outsourcing</p>
+          <p class="text-sm font-semibold text-white/76">Verified tasks. Funded deposits. Clear payouts.</p>
           <h1 class="mt-5 text-5xl font-semibold leading-[1.02] tracking-[-0.045em] md:text-7xl">
             Post work. Match talent. Pay safely.
           </h1>
