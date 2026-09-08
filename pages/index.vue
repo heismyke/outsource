@@ -58,8 +58,8 @@
     <section id="operations" class="border-y border-line bg-surface py-24">
       <div class="mx-auto grid max-w-7xl gap-12 px-4 lg:grid-cols-[0.8fr_1.2fr]">
         <div>
-          <h2 class="text-4xl font-semibold tracking-[-0.035em] md:text-5xl">MVP workflow.</h2>
-          <p class="mt-4 max-w-md text-lg leading-8 text-gray-600">Phase one focuses on reliable domestic work, controlled deposits, and basic admin oversight.</p>
+          <h2 class="text-4xl font-semibold tracking-[-0.035em] md:text-5xl">How work moves on Outsorce.</h2>
+          <p class="mt-4 max-w-md text-lg leading-8 text-gray-600">A controlled flow for task posting, worker selection, deposits, delivery, and payout review.</p>
         </div>
         <div class="grid gap-4 md:grid-cols-2">
           <article v-for="step in workflow" :key="step.title" class="rounded-[28px] border border-line bg-white p-6">
@@ -97,8 +97,8 @@
     <section id="privacy" class="border-t border-line bg-white py-20">
       <div class="mx-auto flex max-w-7xl flex-col justify-between gap-8 px-4 md:flex-row md:items-center">
         <div>
-          <h2 class="text-4xl font-semibold tracking-[-0.035em]">Build the marketplace safely.</h2>
-          <p class="mt-4 text-gray-600">Verification, escrow, disputes, ledgers, and audit logs from day one.</p>
+          <h2 class="text-4xl font-semibold tracking-[-0.035em]">Launch with trust built in.</h2>
+          <p class="mt-4 text-gray-600">Verification, escrow tracking, dispute handling, ledgers, and audit logs from day one.</p>
         </div>
         <NuxtLink to="/register" class="inline-flex items-center justify-center gap-2 rounded-full bg-ink px-6 py-4 font-semibold text-white">
           Create account
@@ -106,6 +106,54 @@
         </NuxtLink>
       </div>
     </section>
+
+    <footer class="border-t border-line bg-white">
+      <div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
+        <div>
+          <NuxtLink to="/" class="inline-flex items-center gap-3">
+            <span class="grid h-10 w-10 place-items-center rounded-2xl bg-brand text-base font-bold text-white">O</span>
+            <span class="text-lg font-semibold tracking-[-0.02em] text-ink">Outsorce</span>
+          </NuxtLink>
+          <p class="mt-4 max-w-sm text-sm leading-6 text-gray-600">
+            Nigeria-first marketplace for task-based work, deposits, contracts, and worker payouts.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-semibold text-ink">Marketplace</h3>
+          <div class="mt-4 space-y-3 text-sm text-gray-600">
+            <NuxtLink class="block hover:text-brand" to="#companies">Roles</NuxtLink>
+            <NuxtLink class="block hover:text-brand" to="#operations">Work flow</NuxtLink>
+            <NuxtLink class="block hover:text-brand" to="#talents">Trust layer</NuxtLink>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-semibold text-ink">Workspaces</h3>
+          <div class="mt-4 space-y-3 text-sm text-gray-600">
+            <NuxtLink class="block hover:text-brand" to="/employer/dashboard">Employer</NuxtLink>
+            <NuxtLink class="block hover:text-brand" to="/worker/dashboard">Worker</NuxtLink>
+            <NuxtLink class="block hover:text-brand" to="/recruiter/dashboard">Recruiter</NuxtLink>
+            <NuxtLink class="block hover:text-brand" to="/admin/dashboard">Admin</NuxtLink>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-semibold text-ink">Access</h3>
+          <div class="mt-4 space-y-3 text-sm text-gray-600">
+            <NuxtLink class="block hover:text-brand" to="/login">Log in</NuxtLink>
+            <NuxtLink class="block hover:text-brand" to="/register">Create account</NuxtLink>
+            <a class="block hover:text-brand" href="mailto:hello@outsorce.com">hello@outsorce.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-line">
+        <div class="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-6 text-sm text-gray-500 md:flex-row md:items-center md:justify-between">
+          <p>© 2026 Outsorce. All rights reserved.</p>
+          <p>Escrow-first work operations for Nigerian teams.</p>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
