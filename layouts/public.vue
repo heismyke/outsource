@@ -21,10 +21,15 @@
           class="hidden items-center gap-7 text-sm font-semibold transition-colors duration-300 md:flex"
           :class="isScrolled ? 'text-slate-700' : 'text-white'"
         >
-          <a href="#companies" class="transition hover:text-teal-700">For companies</a>
-          <a href="#talents" class="transition hover:text-teal-700">For workers</a>
-          <a href="#operations" class="transition hover:text-teal-700">Operations</a>
-          <a href="#privacy" class="transition hover:text-teal-700">Privacy</a>
+          <a
+            v-for="item in navItems"
+            :key="item.href"
+            :href="item.href"
+            class="transition"
+            :class="isScrolled ? 'hover:text-teal-700' : 'hover:text-white/75'"
+          >
+            {{ item.label }}
+          </a>
         </nav>
         <nav class="flex items-center gap-3 text-sm">
           <NuxtLink
@@ -54,6 +59,12 @@
 
 <script setup lang="ts">
 const isScrolled = ref(false)
+const navItems = [
+  { href: '#companies', label: 'For companies' },
+  { href: '#talents', label: 'For workers' },
+  { href: '#operations', label: 'Operations' },
+  { href: '#privacy', label: 'Privacy' },
+]
 
 const updateHeader = () => {
   isScrolled.value = window.scrollY > 24
