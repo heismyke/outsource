@@ -5,6 +5,8 @@ defineProps<{
   userName?: string
   userEmail?: string
 }>()
+
+const auth = useAuthStore()
 </script>
 
 <template>
@@ -33,6 +35,14 @@ defineProps<{
       <div class="absolute bottom-6 left-6 right-6 border-t border-line pt-5">
         <p class="text-sm font-semibold text-ink">{{ userName || 'Outsorce User' }}</p>
         <p class="mt-1 text-xs text-gray-500">{{ userEmail || 'workspace@outsorce.com' }}</p>
+        <button
+          class="mt-4 flex w-full items-center justify-center gap-2 rounded-2xl border border-line bg-white px-4 py-3 text-sm font-semibold text-gray-700 transition hover:border-ink hover:text-ink"
+          type="button"
+          @click="auth.logout()"
+        >
+          <FontAwesomeIcon icon="right-from-bracket" class="h-4 w-4" />
+          Log out
+        </button>
       </div>
     </aside>
 
@@ -56,6 +66,14 @@ defineProps<{
                 <p class="text-xs text-gray-500">{{ userEmail || 'workspace@outsorce.com' }}</p>
               </div>
             </div>
+            <button
+              class="hidden items-center gap-2 rounded-full border border-line bg-white px-4 py-3 text-sm font-semibold text-gray-700 transition hover:border-ink hover:text-ink md:inline-flex"
+              type="button"
+              @click="auth.logout()"
+            >
+              <FontAwesomeIcon icon="right-from-bracket" class="h-4 w-4" />
+              Log out
+            </button>
           </div>
         </div>
       </header>
