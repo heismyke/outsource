@@ -28,13 +28,6 @@
             </NuxtLink>
           </div>
         </div>
-
-        <div class="mt-12 grid max-w-3xl gap-3 sm:grid-cols-3">
-          <div v-for="metric in heroMetrics" :key="metric.label" class="rounded-[24px] border border-white/14 bg-white/10 p-5 backdrop-blur-md">
-            <p class="text-sm text-white/58">{{ metric.label }}</p>
-            <p class="mt-1 text-2xl font-semibold tracking-[-0.03em] text-white">{{ metric.value }}</p>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -157,12 +150,6 @@
 
 <script setup lang="ts">
 definePageMeta({ layout: 'public' })
-
-const heroMetrics = [
-  { label: 'Deposit cap', value: '50%' },
-  { label: 'Payout target', value: '<48h' },
-  { label: 'Year-one goal', value: '10k tasks' },
-]
 
 const roles = [
   { icon: 'building', title: 'Employers', copy: 'Post tasks, compare applicants, fund deposits, approve work, and settle balances.' },
