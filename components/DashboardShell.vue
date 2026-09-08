@@ -12,7 +12,7 @@ defineProps<{
     <aside class="fixed inset-y-0 left-0 z-20 hidden w-72 border-r border-line bg-white p-6 lg:block">
       <NuxtLink to="/" class="flex items-center gap-3 text-xl font-semibold">
         <span class="grid h-10 w-10 place-items-center rounded-2xl bg-brand text-sm font-bold text-white">O</span>
-        Outsource
+        Outsorce
       </NuxtLink>
 
       <nav class="mt-10 space-y-1">
@@ -31,8 +31,8 @@ defineProps<{
       </nav>
 
       <div class="absolute bottom-6 left-6 right-6 border-t border-line pt-5">
-        <p class="text-sm font-semibold text-ink">{{ userName || 'Outsource User' }}</p>
-        <p class="mt-1 text-xs text-gray-500">{{ userEmail || 'workspace@outsource.com' }}</p>
+        <p class="text-sm font-semibold text-ink">{{ userName || 'Outsorce User' }}</p>
+        <p class="mt-1 text-xs text-gray-500">{{ userEmail || 'workspace@outsorce.com' }}</p>
       </div>
     </aside>
 
@@ -52,8 +52,8 @@ defineProps<{
                 {{ (userName || 'O').slice(0, 1) }}
               </div>
               <div class="hidden md:block">
-                <p class="text-sm font-semibold text-ink">{{ userName || 'Outsource User' }}</p>
-                <p class="text-xs text-gray-500">{{ userEmail || 'workspace@outsource.com' }}</p>
+                <p class="text-sm font-semibold text-ink">{{ userName || 'Outsorce User' }}</p>
+                <p class="text-xs text-gray-500">{{ userEmail || 'workspace@outsorce.com' }}</p>
               </div>
             </div>
           </div>

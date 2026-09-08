@@ -1,5 +1,5 @@
 <template>
-  <DashboardShell title="Marketplace Control" :nav-items="navItems" user-name="Admin Operator" user-email="admin@outsource.com">
+  <DashboardShell title="Marketplace Control" :nav-items="navItems" user-name="Admin Operator" user-email="admin@outsorce.com">
     <slot />
   </DashboardShell>
 </template>

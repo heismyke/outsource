@@ -1,3 +1,3 @@
-# outsource
+# outsorce
 
-Nuxt frontend for the Outsource managed talent platform.
+Nuxt frontend for the Outsorce managed talent platform.

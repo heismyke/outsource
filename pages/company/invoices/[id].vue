@@ -28,7 +28,7 @@
 
       <div class="rounded-2xl border border-line bg-white p-6">
         <h3 class="text-xl font-semibold">Submit payment details</h3>
-        <p class="mt-1 text-sm text-gray-600">Use this after your finance team transfers funds to Outsource.</p>
+        <p class="mt-1 text-sm text-gray-600">Use this after your finance team transfers funds to Outsorce.</p>
         <form class="mt-5 grid gap-4 md:grid-cols-2" @submit.prevent="submitted = true">
           <label class="text-sm font-medium">
             Bank transaction reference
@@ -47,13 +47,13 @@
             <input v-model="form.bank" class="mt-1 w-full rounded-xl border border-line px-4 py-3 focus-ring" placeholder="Your company bank" />
           </label>
           <label class="text-sm font-medium md:col-span-2">
-            Notes for Outsource finance
+            Notes for Outsorce finance
             <textarea v-model="form.notes" class="mt-1 w-full rounded-xl border border-line px-4 py-3 focus-ring" rows="4" placeholder="Optional payment details"></textarea>
           </label>
           <button class="rounded-xl bg-[#3989f7] px-5 py-3 text-sm font-semibold text-white md:w-max">Submit for verification</button>
         </form>
         <p v-if="submitted" class="mt-4 rounded-xl bg-emerald-50 px-4 py-3 text-sm font-medium text-emerald-700">
-          Payment details submitted. Outsource finance will verify the transfer and update this invoice.
+          Payment details submitted. Outsorce finance will verify the transfer and update this invoice.
         </p>
       </div>
     </div>
@@ -61,12 +61,12 @@
     <aside class="space-y-6">
       <div class="rounded-2xl bg-[#071126] p-6 text-white">
         <FontAwesomeIcon icon="building" class="h-6 w-6 text-[#39d6f5]" />
-        <h3 class="mt-4 text-xl font-semibold">Pay Outsource</h3>
+        <h3 class="mt-4 text-xl font-semibold">Pay Outsorce</h3>
         <p class="mt-2 text-sm leading-6 text-white/65">Send the invoice amount to the receiving account below. The invoice number must be used as the transfer reference.</p>
         <dl class="mt-6 space-y-4 text-sm">
           <div class="rounded-2xl bg-white/10 p-4">
             <dt class="text-white/50">Account name</dt>
-            <dd class="mt-1 font-semibold">Outsource Technologies Ltd</dd>
+            <dd class="mt-1 font-semibold">Outsorce Technologies Ltd</dd>
           </div>
           <div class="rounded-2xl bg-white/10 p-4">
             <dt class="text-white/50">Bank</dt>
@@ -88,7 +88,7 @@
         <div class="mt-5 space-y-4">
           <div class="flex gap-3">
             <span class="mt-1 h-3 w-3 rounded-full bg-[#3989f7]"></span>
-            <div><p class="font-semibold">Invoice issued</p><p class="text-sm text-gray-600">Outsource sent payment instructions.</p></div>
+            <div><p class="font-semibold">Invoice issued</p><p class="text-sm text-gray-600">Outsorce sent payment instructions.</p></div>
           </div>
           <div class="flex gap-3">
             <span class="mt-1 h-3 w-3 rounded-full bg-amber-400"></span>

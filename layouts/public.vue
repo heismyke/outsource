@@ -4,7 +4,7 @@
       <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4">
         <NuxtLink to="/" class="flex items-center gap-2 text-xl font-semibold text-ink">
           <span class="grid h-10 w-10 place-items-center rounded-2xl bg-brand text-sm font-bold text-white">O</span>
-          Outsource
+          Outsorce
         </NuxtLink>
         <nav class="hidden items-center gap-7 text-sm font-semibold text-gray-600 md:flex">
           <a href="#companies" class="hover:text-brand">For companies</a>

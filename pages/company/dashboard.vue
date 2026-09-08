@@ -8,7 +8,7 @@
       />
       <div class="absolute inset-0 flex flex-col justify-center px-8 text-white">
         <p class="text-sm font-medium text-white/75">Managed hiring desk</p>
-        <h2 class="mt-3 max-w-2xl text-4xl font-semibold leading-tight">Request vetted talent and let Outsource manage the match.</h2>
+        <h2 class="mt-3 max-w-2xl text-4xl font-semibold leading-tight">Request vetted talent and let Outsorce manage the match.</h2>
       </div>
       <div class="absolute -bottom-8 left-8 right-8 hidden grid-cols-[1fr_220px_150px] items-center gap-4 rounded-2xl bg-white p-4 shadow-xl md:grid">
         <input class="rounded-xl border border-line px-4 py-3 text-sm text-gray-700" placeholder="Role title, skills, or project need" />

@@ -1,5 +1,5 @@
 <template>
-  <DashboardShell title="Recruiter Workspace" :nav-items="navItems" user-name="Northstar Recruiting" user-email="recruiter@outsource.com">
+  <DashboardShell title="Recruiter Workspace" :nav-items="navItems" user-name="Northstar Recruiting" user-email="recruiter@outsorce.com">
     <slot />
   </DashboardShell>
 </template>

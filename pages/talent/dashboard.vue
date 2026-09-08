@@ -8,7 +8,7 @@
       />
       <div class="absolute inset-0 flex flex-col justify-center px-8 text-white">
         <p class="text-sm font-medium text-white/75">Curated opportunities</p>
-        <h2 class="mt-3 max-w-2xl text-4xl font-semibold leading-tight">Review matched contract roles selected by Outsource.</h2>
+        <h2 class="mt-3 max-w-2xl text-4xl font-semibold leading-tight">Review matched contract roles selected by Outsorce.</h2>
       </div>
     </div>
     <div class="grid gap-5 md:grid-cols-4">

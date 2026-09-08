@@ -2,7 +2,7 @@
   <section class="space-y-5">
     <div>
       <h2 class="text-lg font-semibold">Contracts</h2>
-      <p class="text-sm text-gray-600">Worker view shows what you earn, not what the employer pays Outsource as platform margin.</p>
+      <p class="text-sm text-gray-600">Worker view shows what you earn, not what the employer pays Outsorce as platform margin.</p>
     </div>
     <div v-for="contract in contracts" :key="contract.id" class="border border-line bg-white p-5">
       <div class="flex items-center justify-between">

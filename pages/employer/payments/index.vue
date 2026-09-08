@@ -2,8 +2,8 @@
   <section class="grid gap-6 xl:grid-cols-[1fr_0.9fr]">
     <div class="space-y-4">
       <div>
-        <h2 class="text-lg font-semibold">Pay Outsource</h2>
-        <p class="text-sm text-gray-600">Transfer the contract deposit to Outsource and submit the bank reference for admin confirmation.</p>
+        <h2 class="text-lg font-semibold">Pay Outsorce</h2>
+        <p class="text-sm text-gray-600">Transfer the contract deposit to Outsorce and submit the bank reference for admin confirmation.</p>
       </div>
       <div v-for="contract in contracts" :key="contract.id" class="border border-line bg-white p-5">
         <div class="flex items-start justify-between">
@@ -23,7 +23,7 @@
 
     <aside class="bg-[#07112d] p-6 text-white">
       <p class="text-sm uppercase tracking-[0.18em] text-white/45">Receiving account</p>
-      <h3 class="mt-4 text-2xl font-semibold">Outsource Technologies Ltd</h3>
+      <h3 class="mt-4 text-2xl font-semibold">Outsorce Technologies Ltd</h3>
       <dl class="mt-6 space-y-4 text-sm">
         <div><dt class="text-white/50">Bank</dt><dd class="mt-1 font-semibold">Providus Bank</dd></div>
         <div><dt class="text-white/50">Account number</dt><dd class="mt-1 font-semibold">1234567890</dd></div>

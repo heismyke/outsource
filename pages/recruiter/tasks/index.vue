@@ -37,7 +37,7 @@ const load = async () => {
 
 const submitWorker = async (taskId: string) => {
   await useApi().post(`/recruiter/tasks/${taskId}/submit-worker`, worker)
-  message.value = 'Worker submitted to Outsource operations.'
+  message.value = 'Worker submitted to Outsorce operations.'
 }
 
 onMounted(load)

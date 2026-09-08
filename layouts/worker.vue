@@ -1,5 +1,5 @@
 <template>
-  <DashboardShell title="Worker Workspace" :nav-items="navItems" user-name="David Okafor" user-email="worker@outsource.com">
+  <DashboardShell title="Worker Workspace" :nav-items="navItems" user-name="David Okafor" user-email="worker@outsorce.com">
     <slot />
   </DashboardShell>
 </template>

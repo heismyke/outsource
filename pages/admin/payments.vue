@@ -10,7 +10,7 @@
       <div class="overflow-hidden border border-line bg-white">
         <div class="border-b border-line p-5">
           <h2 class="text-xl font-semibold">Incoming employer deposits</h2>
-          <p class="mt-1 text-sm text-gray-600">Confirm transfers into the Outsource operating account before work starts.</p>
+          <p class="mt-1 text-sm text-gray-600">Confirm transfers into the Outsorce operating account before work starts.</p>
         </div>
         <table class="min-w-full divide-y divide-line text-sm">
           <thead class="bg-surface text-left text-gray-600">
@@ -42,10 +42,10 @@
       </div>
 
       <aside class="bg-[#071126] p-6 text-white">
-        <h3 class="text-xl font-semibold">Outsource receiving account</h3>
+        <h3 class="text-xl font-semibold">Outsorce receiving account</h3>
         <p class="mt-2 text-sm leading-6 text-white/65">These details are shown to employer users for contract deposits.</p>
         <dl class="mt-6 space-y-4 text-sm">
-          <div><dt class="text-white/50">Account name</dt><dd class="mt-1 font-semibold">Outsource Technologies Ltd</dd></div>
+          <div><dt class="text-white/50">Account name</dt><dd class="mt-1 font-semibold">Outsorce Technologies Ltd</dd></div>
           <div><dt class="text-white/50">Bank</dt><dd class="mt-1 font-semibold">Providus Bank</dd></div>
           <div><dt class="text-white/50">Account number</dt><dd class="mt-1 font-semibold">1234567890</dd></div>
           <div><dt class="text-white/50">Reconciliation rule</dt><dd class="mt-1 font-semibold">Match bank reference to contract deposit notice</dd></div>
