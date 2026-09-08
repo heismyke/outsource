@@ -23,9 +23,6 @@
               Post a task
               <FontAwesomeIcon icon="arrow-right" class="h-4 w-4" />
             </NuxtLink>
-            <NuxtLink to="/login" class="inline-flex items-center justify-center rounded-full border border-white/24 bg-white/10 px-6 py-4 text-base font-semibold text-white backdrop-blur transition hover:bg-white hover:text-ink">
-              Log in
-            </NuxtLink>
           </div>
         </div>
       </div>
